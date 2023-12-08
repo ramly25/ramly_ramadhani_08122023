@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/form', function () {
     return view('form');
 });
+
+Route::post('/crud', [ 'as' => 'crud.read', 'uses' => 'CrudController@index']);

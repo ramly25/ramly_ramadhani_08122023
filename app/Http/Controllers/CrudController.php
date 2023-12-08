@@ -15,7 +15,7 @@ class CrudController extends Controller
     {
         
 
-            return view('', compact(''));
+            return view('form', compact(''));
         
     }
 }
