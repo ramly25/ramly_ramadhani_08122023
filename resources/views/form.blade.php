@@ -24,9 +24,12 @@
         
         function tampilkan(){
             alert("Nama Lengkap : "+document.getElementById("name").value+"\n"
-            +"Tempat Tanggal Lahir : "+document.getElementById("tempat").value+","+document.getElementById("tgl").value+"/"+document.getElementById("bln").value+"/"+document.getElementById("thn").value)+"\n";
+            +"Tempat Tanggal Lahir : "+document.getElementById("tempat").value+","+document.getElementById("tgl").value+"/"+document.getElementById("bln").value+"/"+document.getElementById("thn").value)+"\n"
             +"Alamat : "+document.getElementById("alamat").value+"\n"
             +"No Telp/HP : "+document.getElementById("hp").value+"\n"
+            +"Jenis Kelamin : "+document.getElementById("kelamin1").checked?document.getElementById("kelamin1").value:document.getElementById("kelamin2").value+"\n"
+            +"Agama : "+document.getElementById("agama").value+"\n"
+            +"Hobi : "+document.getElementById("hobi1").value+" "+document.getElementById("hobi2").value+" "+document.getElementById("hobi3").value+" "+document.getElementById("hobi4").value
         }
         </script>
     </head>
@@ -62,9 +65,9 @@
                 <td>Jenis Kelamin</td>
                 <td>:</td>
                 <td>
-                <input type="radio" id="kelamin" name="kelamin" value="Laki-Laki">
+                <input type="radio" id="kelamin1" name="kelamin" value="Laki-Laki">
                 <label for="html">Laki-laki</label>
-                <input type="radio" id="kelamin" name="kelamin" value="Perempuan">
+                <input type="radio" id="kelamin2" name="kelamin" value="Perempuan">
                 <label for="css">Perempuan</label><br>
                 </td>
                 </tr>
